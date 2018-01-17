@@ -1,0 +1,34 @@
+$primary : #252362;
+$primary_lightest: lighten($primary,66%); 
+$primary_lighter: lighten($primary,10%); 
+$primary_darker: darken($primary,10%); 
+$primary_darkest: darken($primary,66%);
+
+$secondary : #3b1d5f;
+$tertiary : #238c54;
+
+$white: #efefef;
+
+$white_lighter: lighten($white,10%); 
+$white_darker: darken($white,10%); 
+
+$red : #800;
+
+
+.c-white{
+	background-color: $white;
+}
+.c-red{
+	background-color: $red;
+}
+.c-tertiary{
+	color: $tertiary;
+}
+.bg_tertiary{
+	background-color:$tertiary;
+}
+.bg_white{
+	background-color:$white;
+}
+
+

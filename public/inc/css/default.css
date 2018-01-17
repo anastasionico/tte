@@ -1,0 +1,408 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}img{border:0}
+/*
+ * MAIN TEMPLATE
+ */
+body { color: #444; font-family:arial, helvetica, verdana, "times new roman", sans-serif; font-size: 12px;
+	width: 100%;
+	background-image: url("/inc/img/bgblack.jpg");
+	background-repeat: no-repeat;
+	background-position:50% 0;
+	background-color: #000;
+  
+  margin: 0 auto; }
+  div#header, div#footer, div#nav, div.homepage, div#main,
+  div.drop, div.panelr, div.splash, div.nobordertop { position:relative; width: 960px; margin: 0 auto; }
+  div#nav { z-index: 9999; }
+  /*
+  div#header, div#footer, div#nav, div#main, div.homepage,
+  div.drop, div.panelr, div.splash, div.nobordertop { position:relative; width: 960px; margin: 0 auto; }
+  */
+  
+div#main div.page { padding-bottom: 10px; }
+div#nav { min-height: 25px }
+div#main div.notification {  background-image: url('/inc/img/s_success.png'); border-color: #0F0; background-position: 10px 50%; background-repeat: no-repeat;
+  border: 1px solid; margin: 0.3em 0px 0px; padding: 0.1em 0.1em 0.1em 36px; background-color: #F0FFF0; border-color: #0F0; margin: 10px 10px 0 10px; }
+/* links */
+a, a:link { color: #036; text-decoration:none; }
+a:hover,
+a:focus { color: #00ADEF; text-decoration:none; }
+a:focus { outline-style:none; }
+/* header */
+div#header { margin-top: 15px; }
+div#header img { padding-left: 20px; margin-left: 10px; margin-right: 10px; }
+div#header p.title,
+div#header p.tel { font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #FFF; display: block; }
+div#header p.tel { padding-top: 4px; }
+div#header span { margin-right: 10px; display: inline-block; text-align: right; width: 700px; }
+/* header adjustments for 30 years
+div#header span { width: 610px; } 
+div#header #ann { margin: 0; padding: 0; margin-top: -10px; position: absolute; top: 0; left: 875px; }
+*/
+/* footer */
+div#footer { text-align: right; padding-bottom: 10px; }
+div#footer span { padding-left: 10px; color: #FFF; vertical-align: top; }
+div#footer a { padding-left: 2px; }
+div#footer #cookies,
+div#footer .blue { display: inline-block; margin-left: 8px; padding-top: 0; vertical-align: top; font-size: 9px; text-decoration: underline; /*color:#00ADEF;*/ }
+/* FONTS AND HEADINGS */
+@font-face {
+	font-family: 'CorporateAConTRegular';
+	src: url('/inc/fonts/c062043t-webfont.eot');
+	src: local('â˜º'),
+    url('/inc/fonts/c062043t-webfont.woff') format('woff'),
+    url('/inc/fonts/c062043t-webfont.ttf') format('truetype'),
+    url('/inc/fonts/c062043t-webfont.svg#webfontkKNhbsUZ') format('svg');
+}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-style:normal;line-height:normal; color: #808080; }
+h1,h2{font-size:2.6em;font-family:'CorporateAConTRegular',sans-serif;}
+h3{font-size:1.6em;}
+h4,h5{font-size:1.4em;font-weight:bold;}
+h1 a, h1 a:hover, h2 a, h2 a:hover { color: #808080; }
+div.heading { font-weight:normal;font-style:normal;line-height:normal; color: #808080; 
+    font-size:2.6em;font-family:'CorporateAConTRegular',sans-serif; }
+/* page content wrappers */
+div#main, div.panel { background-color: #FFF; border: 1px solid #777; }
+div.nobordertop { background-color: #FFF; border-left: 1px solid #777; border-right: 1px solid #777; border-bottom: 1px solid #777;  }
+/*    splash screens */
+div.splash { border-left: 1px solid #777; border-right: 1px solid #777; border-top: #777; }
+div#splash-actros { background: url('/inc/img/truck/actros-2012/index.jpg') no-repeat top left; min-height: 390px; background-color: #FFF; }
+div#splash-citan { background: url('/inc/img/van/citan/index.jpg') no-repeat top left; min-height: 360px; }
+div#tanksafe { margin-left:10px; margin-right:10px;}
+div.homepage { background-image: url('/inc/img/grad1.jpg'); background-repeat: repeat-x; background-color: #FFF;
+  border-bottom: 1px solid #777; border-left: 1px solid #777; border-right: 1px solid #777; }
+div#main.dark { background-color: #A6A9AC; }
+div.drop { height: 7px; background-image: url('/inc/img/960drop.png'); background-repeat: no-repeat; }
+div.sidebar, div.page, div.pagepad { float: left; }
+div.sidebar { min-width: 240px; }
+div.page { width: 720px; }
+div.pagepad { width: 700px; margin-left: 10px; margin-right: 10px; }
+div.pagepad img { margin-top: 10px; }
+/*
+ * MENU BARS
+ *  mb-nav JAN 12
+ *  mb-nav-b MAR 12
+ *
+ * mb-nav */
+div.mb-nav { width: 223px; margin: 10px 8px 10px 9px; font-size: 11px; }
+div.mb-nav div.top { background-image: url('/inc/img/nav_top.png'); background-repeat: no-repeat; height: 50px; }
+div.mb-nav div.bottom { background-image: url('/inc/img/nav_bottom.png'); background-repeat: no-repeat; height: 4px; }
+/* first level */
+div.mb-nav ul { background-image: url('/inc/img/nav_middle.png'); background-repeat: repeat-y; padding: 0 6px 10px 6px; }
+div.mb-nav ul li { background-image: url('/inc/img/nav_button.png'); background-repeat: no-repeat; padding-bottom: 5px }
+div.mb-nav ul li a { line-height: 12px; padding: 3px 0px 4px 14px; display: block; }
+/* second */
+div.mb-nav ul ul { background: #CCC; padding: 0; margin: 0 3px 0 2px; }
+div.mb-nav ul li li { background: #FFF; padding: 0; border-bottom: 1px solid #DDD; }
+div.mb-nav ul li li a	{ line-height: 12px; padding: 3px 5px 2px 13px; display: block; }
+/* third */
+div.mb-nav ul ul ul { margin: 0; }
+div.mb-nav ul ul ul li { border-bottom: 0; border-top: 1px solid #DDD; }
+div.mb-nav ul ul ul li a { padding-left: 20px; }
+/* arrows */
+div.mb-nav ul li a.expandable,
+div.mb-nav ul li a.expanded { background-image: url('/inc/img/arrows.gif'); background-repeat: no-repeat; }
+div.mb-nav ul li a.expandable { background-position: 192px 7px; }
+div.mb-nav ul li a.expandable:hover { background-position: 192px -43px; }
+div.mb-nav ul li a.expanded { background-position: 192px -93px; }
+div.mb-nav ul li a.expanded:hover { background-position: 192px -143px; }
+div.mb-nav ul li li a.expandable { background-position: 190px 7px; }
+div.mb-nav ul li li a.expandable:hover { background-position: 190px -43px; }
+div.mb-nav ul li li a.expanded { background-position: 190px -93px; }
+div.mb-nav ul li li a.expanded:hover { background-position: 190px -143px; }
+div.mb-nav ul li li a:hover,
+div.mb-nav ul li li a.on { background-color: #ECECEC; color: #00ADEF; }
+/*
+ * mb-nav-b */
+div.mb-nav-b { width: 220px; margin: 10px; font-size: 11px; 
+  background-image: url('/inc/img/nav_b_bg.png'); background-repeat: no-repeat; background-color: #2C2D31;  }
+div.mb-nav-b div.top { min-height: 33px; border-bottom: 1px solid #2E2F33; padding-top: 6px; padding-left: 20px; }
+div.mb-nav-b ul li a { border-top: 1px solid #737476; border-bottom: 1px solid #2E2F33;
+  display: block; height: 18px; padding: 6px 20px 0 20px; line-height: 12px; }
+div.mb-nav-b ul ul { background-image: url('/inc/img/nav_b_exp.png'); background-repeat: no-repeat; background-color: #545658;
+  border-bottom: 1px solid #2E2F33; margin-bottom: -1px; }
+div.mb-nav-b ul ul li { border: 0; border-bottom: 1px solid #2E2F33; border-top: 1px solid #737476; }
+div.mb-nav-b ul ul li:first-child { border-top: 1px solid #2E2F33; }
+div.mb-nav-b ul ul a { border: 0; height: 18px; }
+div.mb-nav-b ul a.expanded { border-bottom: 0; }
+div.mb-nav-b div.bottom { height: 40px; }
+/* link colors */
+div.mb-nav-b a,
+div.mb-nav-b a:link { color: #FFF; text-decoration:none; }
+div.mb-nav-b a.on,
+div.mb-nav-b a:hover,
+div.mb-nav-b a:focus { color: #00ADEF; text-decoration:none; }
+/* arrows */
+div.mb-nav-b ul li a.expandable,
+div.mb-nav-b ul li a.expanded { background-image: url('/inc/img/arrows.gif'); background-repeat: no-repeat; }
+div.mb-nav-b ul li a.expandable { background-position: 194px -189px; }
+div.mb-nav-b ul li a.expandable:hover { background-position: 194px -41px; }
+div.mb-nav-b ul li a.expanded { background-position: 194px -139px; color: #00ADEF; }
+
+
+/* buttons */
+a.button { background-image: url('/inc/img/button_left.png'); background-repeat: no-repeat; background-position: 0% 0%;
+           white-space: nowrap; padding-left: 13px; display: inline-block; height: 20px; color: #FFF; }
+a.button:hover { background-position: 0 -50px; color: #FFF; }
+a.button span { background-image: url('/inc/img/button_right.png'); background-repeat: no-repeat; background-position: 100% 0%; display: inline-block;
+                font-size: 11px; line-height: 12px; padding: 3px 13px 5px 5px; } 
+a.button:hover span { background-position: 100% -50px; cursor: pointer; }
+input.cyan {
+	padding:1px 3px 1px 3px;
+	height:22px;
+	color: #FFF; 
+	white-space:nowrap;
+	background: rgb(23,141,192); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(23,141,192,1) 6%, rgba(14,119,165,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(6%,rgba(23,141,192,1)), color-stop(100%,rgba(14,119,165,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(23,141,192,1) 6%,rgba(14,119,165,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(23,141,192,1) 6%,rgba(14,119,165,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(23,141,192,1) 6%,rgba(14,119,165,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(23,141,192,1) 6%,rgba(14,119,165,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#178dc0', endColorstr='#0e77a5',GradientType=0 ); /* IE6-9 */
+    border-color: #43B7EA #0D516E #0D516E #43B7EA;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+/* useds vehicles categorys
+ul#vehicles_vans 		{ width: 720px; }
+ul#vehicles_vans li		{ background: url('/inc/img/matrix-van.png') no-repeat top left;
+						  width:218px; height:110px; float:left; border: 1px solid #DDD; margin: 10px 10px 0 10px; }
+ul#vehicles_vans li a	{ display: block; padding-top: 94px; width: 218px; text-align: center;}
+ul#vehicles_vans li.curtain-slide{ background-position: -10px 0;}
+ul#vehicles_vans li.dropside{ background-position: -10px -115px;}
+ul#vehicles_vans li.dualiner{ background-position: -10px -230px;}
+ul#vehicles_vans li.luton-box{ background-position: -10px -345px;}
+ul#vehicles_vans li.panel-van{ background-position: -10px -460px;}
+ul#vehicles_vans li.refrigerated{ background-position: -10px -575px;}
+ul#vehicles_vans li.specialist{ background-position: -10px -690px;}
+ul#vehicles_vans li.tipper{ background-position: -10px -805px;}
+ul#vehicles_vans li.traveliner{ background-position: -10px -920px;}
+
+#matrix.truck ul.body li{background: url(/inc/img/matrix-truck.png) no-repeat top left;}
+#matrix.truck ul.body li.curtain-side{ background-position: 0 0;}
+#matrix.truck ul.body li.drawbar{ background-position: 0 -115px;}
+#matrix.truck ul.body li.dropside{ background-position: 0 -230px;}
+#matrix.truck ul.body li.luton-box{ background-position: 0 -345px;}
+#matrix.truck ul.body li.refrigerated{ background-position: 0 -460px;}
+#matrix.truck ul.body li.specialist{ background-position: 0 -575px;}
+#matrix.truck ul.body li.tipper{ background-position: 0 -690px;}
+#matrix.truck ul.body li.tractor{ background-position: 0 -805px;}
+
+div.used_vehicle_list	{ margin: 10px 10px 0 7px; border: 1px solid #DDD; width: 695px; padding: 3px;
+	 					  background-image: url('/inc/img/grad.jpg'); background-repeat: repeat-x; background-color: #E9E9E7; }
+div.used_vehicle_list div.info
+						{ float: left; border-left: 1px solid #DDD;}
+div.used_vehicle_list img
+						{ border-left: 1px solid #DDD; width: 219px; border-right: 2px groove #DDD; border-bottom: 2px groove #DDD; background-color: #CCC; }
+div.used_vehicle_list a.photo { display: block; width: 219px; float: left; }
+div.used_vehicle_list div.info
+						{ margin-left: 8px; width: 456px; }
+div.used_vehicle_list div.title { font-weight:normal;font-style:normal;line-height:normal; color: #808080;
+  font-size:1.8em;font-family:'CorporateAConTRegular',sans-serif;
+  padding-left: 12px; margin-top: -3px; }
+div.used_vehicle_list a.more-info { margin-left: 336px; margin-top: 3px; }
+div.used_vehicle_list div.additional_details { padding: 10px; }
+div.used_vehicle_list div.model { padding-left: 12px; padding-bottom: 3px; }
+div.used_vehicle_list div.model span { padding-right: 10px; }
+
+div.info ul.tabs { border-bottom: 1px solid #DDD; float: left; width: 100%; }
+div.info ul.tabs li { float:left; display: block; background-image: url('/inc/img/bg_navi_tab.gif'); background-repeat: no-repeat; background-position: 0px -200px; height: 18px;}
+div.info ul.tabs li.open { background-position: 0px -300px; }
+div.info ul.tabs li span { height: 19px; display: block; float:left; padding: 4px 12px 0 12px; min-width: 110px; margin-left: 1px; background-position:100% 0px; background-image: url('/inc/img/bg_navi_tab.gif'); }
+div.info ul.tabs li.open span { background-position: 100% -100px; }
+
+div.info div.features { border-bottom: 1px solid #DDD; border-right: 1px solid #DDD; background-color: #FFF; float: left; width: 100%; }
+div.info div.features ul { border: 0; padding-top: 3px; }
+div.info div.features ul li { width: 139px; background-image: url('/inc/img/arrows.gif'); background-repeat: no-repeat; background-position: 2px 3px;
+                              color: #036; font-size: 11px; line-height: 13px; padding-left: 13px; float: left;  }
+div.info div.features ul li.widthone,
+div.info div.features ul li.widthtwo,
+div.info div.features ul li.widthfull { background-image: none; text-align: left; padding: 5px 0 5px 0; }
+div.info div.features ul li.widthone { width: 152px; }
+div.info div.features ul li.widthone a { margin-left: -5px; }
+div.info div.features ul li.widthtwo { width: 157px; padding-left: 147px; }
+div.info div.features ul li.widthfull { width: 157px; padding-left: 299px; }
+div.info div.features ul li a.button span { width: 95px; }
+div.used_vehicle div.info	{ margin: 10px; float: left; width: 460px; }
+div.used_vehicle div.image_box { margin: 10px;  float: left; border-bottom: 2px groove #AAA; border-right: 2px groove #999; width: 458px; background-color:#DDD; }
+div.used_vehicle div.image_box img {  display: block; border: 1px solid #777; padding: 4px; }
+div.used_vehicle div.box { background-image: url('/inc/img/grad.jpg'); background-repeat: repeat-x; background-color: #E9E9E7; border: 1px solid #DDD; padding: 0 10px 10px 10px;
+  margin-bottom: 10px; }
+div.used_vehicle a.cloud-zoom-gallery { display: inline-block; margin-right: 4px; }
+div.used_vehicle ul.used-parts li { display: inline-block; border: 1px solid #DDD; }
+div.used_vehicle p.pricemile { padding-bottom: 10px; }
+div.used_vehicle div.tabbertab { background: #FFF; }
+div.used_vehicle div.undertab { padding-top: 10px; }
+div.used_vehicle div.buttonrow { padding-top: 10px; text-align: right; }
+*/
+
+/* >> The Magnificent CLEARFIX << */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+
+/* FRAMEWORK ADDITION FOR PAGE TEMPLATING
+ */
+.fl { float: left; }
+.fr { float: right; }
+.mt { margin: 10px; }
+.fw img, .fw p { margin: 10px; }
+.fw ul { list-style-type: disc; padding-left: 40px; padding-right: 10px; }
+.fw ul li { padding-bottom: 5px; }
+.g2, .g3, .g4, .g5, .g6, .g9 { display: inline; float: left; }
+.g2 { width: 160px; }
+.g3 { width: 220px; }
+.g4 { width: 300px; }
+.g5 { width: 380px; }
+.g6 { width: 460px; }
+.g9 { width: 700px; }
+.g12 { width: 940px; }
+.gc { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; }
+/* form */
+.aform { margin: 10px; border-top: 1px solid #DDD; }
+.aform form > div { border-bottom: 1px solid #DDD; border-left: 1px solid #DDD; border-right: 1px solid #DDD; padding: 5px; 
+  background-image: url('/inc/img/grad.jpg'); background-repeat: repeat-x; background-color: #E9E9E7; background-position: 0 -80px; }
+.aform label { width: 140px; display: inline-block; margin-right: 10px; text-align: right; vertical-align: top; padding: 3px 0 3px 0; }
+.aform div.button-row { padding-left: 155px; }
+
+
+p.bold { font-weight: bold; margin-bottom: 5px; }
+div.page h1 { padding-left: 10px; }
+/* NEW MB TABLE STYLING */
+table.spec { border-collapse: collapse; border: 1px solid #DDD; margin: 0 10px 10px 10px; }
+table.spec td,
+table.spec th { padding: 2px 10px 2px 5px; border-left: 1px solid #DDD; }
+table.spec th { font-weight: bold; text-align: left; }
+table.spec td { vertical-align: middle; }
+table.spec tr { border-bottom: 1px solid #E4E4E4; }
+table.spec tr.ev { background-color: #EEE; }
+
+/* cart */
+div.cart div.fl,
+div.cart div.fr,
+div.cart div.g6 { margin: 10px; }
+table.formTable td { padding: 5px; vertical-align: top; }
+div.cartpad { padding: 10px }
+/* home page */
+div.homepage div.menu { background-image: url('/inc/img/nav_b_bg.png'); background-repeat: no-repeat; background-color: #2C2D31;
+  border-right: 1px solid #9c9ea3; border-top: 1px solid #9c9ea3; padding: 10px 0 90px 0px; margin-top: -10px; width: 210px; }
+div.homepage div.menu a:link,
+div.homepage div.menu a:visited { color: #FFF; }
+div.homepage div.menu ul li a { font-weight:normal;font-style:normal;line-height:normal; 
+  font-size:1.8em;font-family:'CorporateAConTRegular',sans-serif; }
+
+div.homepage div.menu ul li { padding-left: 19px; }
+div.homepage div.menu ul { border-bottom: 1px solid #2E2F33; padding-bottom: 20px; }
+div.menu div.address { color: #DDD; padding: 10px 10px 10px 19px; border-top: 1px solid #737476; border-bottom: 1px solid #2E2F33; font-size: 11px; }
+div.menu div.title { font-size:12px; color: #FFF; }
+div.homepage div.wp-post { margin-top: 10px; }
+div.linebreak { border-bottom: 1px solid #DDD; margin-top: 10px; }
+
+div.curve-top { background-image: url('/inc/img/curve.jpg'); background-repeat: no-repeat; background-color: #CCCCCC; padding-top: 5px;
+  margin-top: 6px; }
+div.curve-top p.title { padding-bottom: 3px; padding-top: 2px; padding-left: 5px; font-weight: bold; }
+div#rscroll { background-color: #FFF;height: 280px; overflow: auto; border: 1px solid #CCCCCC;}
+#vehicle-grid li { margin-right: 8px; margin-left: 1px; background: url('/inc/img/index-sprite.jpg') no-repeat top left; float:left; }
+#vehicle-grid li a { display:block; padding-top: 125px; text-align: center; }
+#vehicle-grid li.nosprite { background: none; }
+#vehicle-grid li.nosprite a { padding-top: 0; }
+#vehicle-grid li.sprite-actros{ background-position: 0 0; width: 165px; } 
+#vehicle-grid li.sprite-oldactros{ background-position: -1520px 0; width: 165px; } 
+#vehicle-grid li.sprite-antos{ background-position: -1700px 0; width: 165px; } 
+#vehicle-grid li.sprite-atego{ background-position: -170px 0; width: 165px; } 
+#vehicle-grid li.sprite-axor{ background-position: -340px 0; width: 165px; } 
+#vehicle-grid li.sprite-canter{ background-position: -510px 0; width: 165px; } 
+#vehicle-grid li.sprite-citan{ background-position: -680px 0; width: 165px; } 
+#vehicle-grid li.sprite-econic{ background-position: -850px 0; width: 165px; } 
+#vehicle-grid li.sprite-sprinter{ background-position: -1020px 0; width: 165px; } 
+#vehicle-grid li.sprite-vario{ background-position: -1190px 0; width: 165px; } 
+#vehicle-grid li.sprite-vito{ background-position: -1360px 0; width: 165px; } 
+
+ul.bjqs p.wc,
+ul.bjqs p.bc { font-weight:normal;font-style:normal;line-height:normal; font-size:3em;font-family:'CorporateAConTRegular',sans-serif; }
+ul.bjqs p.wc { color: #FFF; }
+ul.bjqs p.bc { color: #000; }
+div.homepage div.main { display: inline; float: left; width: 719px; padding: 10px 10px 0 20px; }
+div.vehicle-mini div.info { background-color: #DDD; padding-left: 4px; }
+
+#makeMeScrollable { width:100%; height: 150px; position: relative; }
+#makeMeScrollable div.scrollableArea div.vehicle-mini { position: relative; float: left; width: 118px; height: 150px; padding: 0 10px 0 10px; }
+div.vehicle-mini div.photo-wrap { min-height: 84px; background: #DDD; border-top: 4px solid #DDD; border-left: 4px solid #DDD; border-right: 4px solid #DDD; }
+/*div.vehicle-mini { float: left; width: 220px; min-height: 84px; padding: 10px 9px 10px 9px; background: #FFF; }
+div.vehicle-mini div.info { padding-left: 10px; padding-top: 10px; }*/
+/*
+table					{ border-collapse: collapse; }
+table td, table th		{ padding: 2px 10px 2px 10px; }
+table th				{ font-weight: bold; text-align: left; }
+table td				{ background-color: #FEFEFE; vertical-align: middle; border-bottom: 1px solid #AAA; border-top: 1px solid #AAA; }
+*/
+/* SERVICE */
+span.spanner { background: url('/inc/img/service/spanner.png') no-repeat top left; display: inline-block; width: 15px; height: 15px; }
+
+/* ACTROS 2012 */
+div.actros2012 { background: url('/inc/img/truck/actros-2012/index.jpg') no-repeat top left; min-height: 390px; }
+div.actros2012 div.page { margin-top: 390px; }
+div.actros2012 p { padding: 10px; }
+div.actros2012 div.index { position: absolute; background-color: #FFF; }
+
+/* OLD SB */
+#menu { z-index: 999; }
+
+/* CLOUDZOOM */
+
+/* This is the moving lens square underneath the mouse pointer. */
+.cloud-zoom-lens {
+	border: 4px solid #888;
+	margin:-4px;	/* Set this to minus the border thickness. */
+	background-color:#fff;	
+	cursor:move;		
+}
+
+/* This is for the title text. */
+.cloud-zoom-title {
+	font-family:Arial, Helvetica, sans-serif;
+	position:absolute !important;
+	background-color:#000;
+	color:#fff;
+	padding:3px;
+	width:100%;
+	text-align:center;	
+	font-weight:bold;
+	font-size:10px;
+	top:0px;
+}
+
+/* This is the zoom window. */
+.cloud-zoom-big {
+	border:4px solid #ccc;
+	overflow:hidden;
+}
+
+/* This is the loading message. */
+.cloud-zoom-loading {
+	color:white;	
+	background:#222;
+	padding:3px;
+	border:1px solid #000;
+}
+/* LAST FW */
+.lastfw .g6,
+.lastfw .g12 { margin: 10px; }
+.lastfw p { margin-bottom: 10px; }
+.lastfw h1 { margin-bottom: 5px; }
+.lastfw table.spec { margin: 0; }
+ul.bullets,
+ul.numbers {
+  padding-left: 35px;
+  margin-bottom: 10px; 
+}
+ul.bullets { list-style-type: disc; }
+ul.numbers { list-style-type: decimal; }
+ul.bullets li,
+ul.numbers li { padding-bottom: 5px; }
+.lastfw small { font-size: 11px; }
+
+.blog-banner { text-align: center; padding-top: 10px; } 

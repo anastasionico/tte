@@ -1,0 +1,101 @@
+@import "../module/buttons";
+
+@mixin l-grid($cols, $mrg){
+
+	float: left;
+	margin-right: $mrg;
+	margin-bottom: $mrg;
+	width: ((100% - (( $cols - 1 ) * $mrg )) / $cols );
+	@include media($xs,$lg){
+		&:nth-child(#{$cols}n){
+			margin-right: 0;
+		}	
+	}
+	@include media($sm){
+		&:nth-child(#{$cols}n){
+			margin-right: 0;
+		}	
+	}
+}
+
+
+@mixin media($min,$max:6000px){
+	@media screen and (min-width : $min) and (max-width : $max){
+		@content;
+	}
+}
+@mixin blur($radius){
+	-webkit-filter: blur($radius);
+	-moz-filter: blur($radius);
+	-o-filter: blur($radius);
+	-ms-filter: blur($radius);
+	filter: blur($radius);
+}
+
+@mixin border-radius($radius){
+	-webkit-border-radius:$radius;
+	-moz-border-radius:$radius;
+	-o-border-radius: blur($radius);
+	-ms-border-radius: blur($radius);
+	border-radius:$radius;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin clearfix{
+	&:after{
+		content:'';
+		diplay:block;
+		clear:both;
+	}
+}
+
+
+
+
+
+.pulse{
+	animation-name: slow-pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes slow-pulse{
+  0%
+    {transform: scale(1);}
+  50%
+    {transform: scale(1.2);
+    color:$tertiary;
+    }
+
+  100%
+    {transform: scale(1);}
+}
+
+
+
+
+
+
+
+.services{
+	margin-top:2em;
+	li{
+		@include l-grid(3, 5%);
+	}
+}
+.float-right{
+	float:right;
+}
+
+.line-through{
+	text-decoration: line-through;
+	text-decoration: line-through;
+
+}
+.inline-block{display:inline-block;}

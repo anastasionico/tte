@@ -1,0 +1,38 @@
+.one_thirds{
+	background-color:$primary_lighter;
+	color:$white;
+	padding:2em;
+	margin-bottom: -99999px;
+    padding-bottom: 99999px;	
+    
+    
+    .btn-ghost{
+		@extend %btn-ghost;
+		margin-bottom:2em;
+		background-color:$primary_lighter;
+		color:$white;
+		border:1px solid $white;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+		padding:2em;
+	}
+}
+.two_thirds{
+	background-color:$primary_lightest;
+	color:$primary;
+	padding:2em;
+	margin-bottom: -99999px;
+    padding-bottom: 99999px;	
+    
+	.btn-ghost{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+	
+	}
+}

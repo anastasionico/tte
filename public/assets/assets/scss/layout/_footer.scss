@@ -1,0 +1,40 @@
+footer{
+	background-color:$primary;
+	color:$white;
+	text-align:center;
+	a{
+		@include transition(color .3s ease);
+  		&:hover{
+			color:$white;
+		}	
+	}
+	@include media($xs,$sm){
+		div{
+			@include l-grid(1, 5%);
+			padding:1em;
+			text-align: center;
+		}	
+	}
+	@include media($sm){
+		div{
+			@include l-grid(3, 1%);
+			padding:3em;
+			h4{
+				margin-bottom: 1em;
+			}
+			&:first-child{
+				text-align: right;
+			}
+			&:nth-child(3){
+				text-align: left;
+			}
+		}	
+	}
+	#copyright{
+		width:100%;
+		padding:1em 3em;
+		margin:0px;
+		color:$primary;
+		background:$primary_darker;
+	}
+}

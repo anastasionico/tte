@@ -1,0 +1,37 @@
+/*
+ * DATA CAPTURE 
+ * 14 MAY - had to add the > inheritence to get chosen.js styling to work
+ * 6 JUNE - added extra styling for form breaks (div.break)
+ */
+div.page h1 { padding-left: 10px; }
+div.page { padding-bottom: 20px; }
+.datacapture            { width: 700px; margin: 10px; border-top: 1px solid #DDD; }
+.datacapture label,
+.datacapture div > span { width: 140px; display: inline-block; margin-right: 20px; text-align: right; vertical-align: top; padding: 3px 0 3px 0; }
+.datacapture span.full  { width: 520px; text-align: left; margin: 0; }
+.datacapture form > div { border-bottom: 1px solid #DDD; border-left: 1px solid #DDD; border-right: 1px solid #DDD; padding: 5px; 
+                          background-image: url('/inc/img/grad.jpg'); background-repeat: repeat-x; background-color: #E9E9E7; background-position: 0 -80px; }
+.datacapture form > div.break { border-bottom: 1px solid #DDD; border-left: 0; border-right: 0; padding: 0; 
+                          background-image: none; background-color: #FFF; }
+.datacapture form > div.break h1 { padding-left: 0; margin-bottom: 10px; margin-top: 10px; }
+.datacapture div div    { width: 520px; display: inline-block; }
+.datacapture > form > div > ul         { width: 520px; display: inline-block; }
+.datacapture ul label   { text-align: left; margin: 0; }
+.datacapture > form > div > ul > li  { width: 170px; display: inline-block; vertical-align: top; }
+.datacapture > form > div > div > ul > li  { width: 170px; display: inline-block; vertical-align: top; }
+.datacapture p.row      { margin-left: 170px; padding-top: 5px; } 
+/* MB TABLE STYLING */
+table.mb-dark       { border-collapse: collapse;  border-top: 1px solid #2E2F33; margin: 10px; }
+table.mb-dark td,
+table.mb-dark th    { padding: 6px 20px 6px 20px; }
+table.mb-dark th    { font-weight: none; text-align: left; background-color: #808183; color: #FFF; 
+  border-bottom: 1px solid #2E2F33;  }
+table.mb-dark td    { vertical-align: middle; border-top: 1px solid #737476; border-bottom: 1px solid #737476; }
+table.mb-dark tr.over    { background-color: #2B2D31; color: #FFF; }
+table.mb-dark tr.ev { background-color: #EEE; }
+
+span.ui-icon { background-color: #FFF; }
+
+
+
+table#claims .status { width: 200px; }

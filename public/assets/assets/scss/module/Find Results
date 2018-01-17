@@ -1,0 +1,73 @@
+Searching 10709 files for "home-manufacturer"
+
+/Users/nico/work/trucktrailerequip/application/views/store/index.php:
+   10  
+   11  <div class="row two_side">
+   12:   <section class="l-grid5 col-xs-12 col-sm-6 home-manufacturer">
+   13      <h1>Manufacturer</h1>
+   14      <ul class="clearfix ">
+
+/Users/nico/work/trucktrailerequip/public/assets/.sass-cache/1f7bc08626d30e0331a4c3fb69f3ec9e36affa66/_components.scssc:
+    <binary>
+
+/Users/nico/work/trucktrailerequip/public/assets/css/main.css:
+   67    background-color: #efefef; }
+   68  
+   69: .two_side section .btn-ghost, .one_thirds .btn-ghost, .two_thirds .btn-ghost, .home-manufacturer .cta, .home-category .cta, .home-offers .btn-ghost, .home-offers .cta, .home-newest .btn-ghost, .home-newest .cta, .home-bestSeller .btn-ghost, .home-featured .btn-ghost, .home-featured .cta, .home-aboutUs .cta, .home-delivery .cta, .similarObject--action .cta {
+   70    display: inline-block;
+   71    padding: 0.5em 2em;
+   72    text-transform: capitalize; }
+   73:   .two_side section .btn-ghost:hover, .one_thirds .btn-ghost:hover, .two_thirds .btn-ghost:hover, .home-manufacturer .cta:hover, .home-category .cta:hover, .home-offers .btn-ghost:hover, .home-offers .cta:hover, .home-newest .btn-ghost:hover, .home-newest .cta:hover, .home-bestSeller .btn-ghost:hover, .home-featured .btn-ghost:hover, .home-featured .cta:hover, .home-aboutUs .cta:hover, .home-delivery .cta:hover, .similarObject--action .cta:hover {
+   74      border-color: #8c7323;
+   75      color: #8c7323; }
+   ..
+  264      margin: 0.25em; }
+  265  
+  266: .two_side section .btn-ghost, .one_thirds .btn-ghost, .two_thirds .btn-ghost, .home-manufacturer .cta, .home-category .cta, .home-offers .btn-ghost, .home-offers .cta, .home-newest .btn-ghost, .home-newest .cta, .home-bestSeller .btn-ghost, .home-featured .btn-ghost, .home-featured .cta, .home-aboutUs .cta, .home-delivery .cta, .similarObject--action .cta {
+  267    display: inline-block;
+  268    padding: 0.5em 2em;
+  269    text-transform: capitalize; }
+  270:   .two_side section .btn-ghost:hover, .one_thirds .btn-ghost:hover, .two_thirds .btn-ghost:hover, .home-manufacturer .cta:hover, .home-category .cta:hover, .home-offers .btn-ghost:hover, .home-offers .cta:hover, .home-newest .btn-ghost:hover, .home-newest .cta:hover, .home-bestSeller .btn-ghost:hover, .home-featured .btn-ghost:hover, .home-featured .cta:hover, .home-aboutUs .cta:hover, .home-delivery .cta:hover, .similarObject--action .cta:hover {
+  271      border-color: #8c7323;
+  272      color: #8c7323; }
+  ...
+  313    width: 100%; }
+  314  
+  315: .home-manufacturer {
+  316    background-color: #252362; }
+  317:   .home-manufacturer h1 {
+  318      color: #efefef; }
+  319:   .home-manufacturer a {
+  320      color: #efefef; }
+  321:   .home-manufacturer .cta {
+  322      border: 1px solid #efefef;
+  323      color: #efefef;
+  ...
+  584    background-color: #efefef; }
+  585  
+  586: .two_side section .btn-ghost, .one_thirds .btn-ghost, .two_thirds .btn-ghost, .home-manufacturer .cta, .home-category .cta, .home-offers .btn-ghost, .home-offers .cta, .home-newest .btn-ghost, .home-newest .cta, .home-bestSeller .btn-ghost, .home-featured .btn-ghost, .home-featured .cta, .home-aboutUs .cta, .home-delivery .cta, .similarObject--action .cta {
+  587    display: inline-block;
+  588    padding: 0.5em 2em;
+  589    text-transform: capitalize; }
+  590:   .two_side section .btn-ghost:hover, .one_thirds .btn-ghost:hover, .two_thirds .btn-ghost:hover, .home-manufacturer .cta:hover, .home-category .cta:hover, .home-offers .btn-ghost:hover, .home-offers .cta:hover, .home-newest .btn-ghost:hover, .home-newest .cta:hover, .home-bestSeller .btn-ghost:hover, .home-featured .btn-ghost:hover, .home-featured .cta:hover, .home-aboutUs .cta:hover, .home-delivery .cta:hover, .similarObject--action .cta:hover {
+  591      border-color: #8c7323;
+  592      color: #8c7323; }
+  ...
+  756        margin-top: 3em; }
+  757  
+  758: .two_side section .btn-ghost, .one_thirds .btn-ghost, .two_thirds .btn-ghost, .home-manufacturer .cta, .home-category .cta, .home-offers .btn-ghost, .home-offers .cta, .home-newest .btn-ghost, .home-newest .cta, .home-bestSeller .btn-ghost, .home-featured .btn-ghost, .home-featured .cta, .home-aboutUs .cta, .home-delivery .cta, .similarObject--action .cta {
+  759    display: inline-block;
+  760    padding: 0.5em 2em;
+  761    text-transform: capitalize; }
+  762:   .two_side section .btn-ghost:hover, .one_thirds .btn-ghost:hover, .two_thirds .btn-ghost:hover, .home-manufacturer .cta:hover, .home-category .cta:hover, .home-offers .btn-ghost:hover, .home-offers .cta:hover, .home-newest .btn-ghost:hover, .home-newest .cta:hover, .home-bestSeller .btn-ghost:hover, .home-featured .btn-ghost:hover, .home-featured .cta:hover, .home-aboutUs .cta:hover, .home-delivery .cta:hover, .similarObject--action .cta:hover {
+  763      border-color: #8c7323;
+  764      color: #8c7323; }
+
+/Users/nico/work/trucktrailerequip/public/assets/scss/module/_components.scss:
+   33  }
+   34  
+   35: .home-manufacturer{
+   36  	background-color: $primary;
+   37  	h1{
+
+17 matches across 4 files

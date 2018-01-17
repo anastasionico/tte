@@ -1,0 +1,33 @@
+.jumbotron{
+	height:13em;
+	background-image:url('/assets/img/vehicle/heroimage.jpg');
+	background-size:cover;
+	color:$white;
+
+	.Jumbotron_container{
+		padding-left:3em;
+		padding-top:6em;
+
+		h1{
+			color:$white;
+			margin-top: 1.5em;
+		}
+	}
+
+}
+
+.jumbotron_mini{
+	height:13em;
+	background-image:url('/assets/img/vehicle/heroimage.jpg');
+	background-size:cover;
+	color:$white;
+
+	.Jumbotron_container{
+		padding-left:3em;
+		padding-top:6em;
+
+		h1{
+			color:$white;
+		}
+	}
+}

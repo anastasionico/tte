@@ -1,0 +1,32 @@
+RewriteEngine on
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+
+
+# codeigniter
+#RewriteRule ^mercedes-parts ci.php [L,QSA]
+#RewriteRule ^form ci.php [L,QSA]
+# codeigniter - sagepay
+#RewriteRule ^transaction_status/ ci.php [L,QSA]
+#RewriteRule ^transaction_status ci.php [L,QSA]
+#RewriteRule ^sagepay_notification/ ci.php [L,QSA]
+#RewriteRule ^sagepay_notification ci.php [L,QSA]
+
+# Redirect to PHP if it exists.
+# e.g. example.com/foo will display the contents of example.com/foo.php
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME}.php -f 
+#RewriteRule ^(.+)$ $1.php [L,QSA]
+
+
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]

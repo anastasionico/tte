@@ -1,0 +1,13 @@
+.one_side{
+	@include media($xs,$sm){
+		padding: 1em 1em;
+	}
+	@include media($sm){
+		padding: 1em 6em;
+		margin-right: 0px;
+		color: $primary;
+		text-align: center;
+	}
+	
+		
+}

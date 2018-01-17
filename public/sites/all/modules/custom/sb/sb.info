@@ -1,0 +1,6 @@
+; $Id$
+name = SB Core
+description = Contains core functionality for the SB Commercials CMS.
+package = SB Commercials Plc
+core = 7.x
+files[] = sb.module

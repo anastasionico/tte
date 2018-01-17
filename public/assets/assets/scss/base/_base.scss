@@ -1,0 +1,31 @@
+@import 'colors';
+
+body {
+	color: $primary;
+	background-color: $white;
+	font-family: 'Muli', sans-serif;
+}
+.row{
+	margin-right: 0px;
+    margin-left: 0px;
+    overflow:hidden;
+}
+
+
+h1{margin-bottom:0.5em;}
+h4{margin-top:0.5em;}
+p{line-height:1.4em;}
+
+a {
+	color: $tertiary;
+	&:hover{
+		text-decoration: none;
+	}
+}
+button{
+	font-family: 'Muli', sans-serif;
+
+}
+
+
+

@@ -1,0 +1,112 @@
+/*
+MENU CSS
+*/
+ul.sf-menu { z-index: 9999; }
+/* SUPERFISH FIX */
+.sf-menu li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+.sf-menu li { float: left; position: relative; z-index: 9999; }
+.sf-menu li:hover ul, .sf-menu li.sfHover ul { left: 0; top: 27px; /* match top ul list item height */ z-index: 9999; }
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul { left: 0px; /* match ul width */ top: 17px; }
+
+/* all lists */
+.sf-menu, .sf-menu * { margin: 0; padding: 0; list-style: none; }
+.sf-menu ul { line-height:	1.0;  }
+.sf-menu li ul li a { padding: 3px 10px 2px 10px; border-bottom-color: #DDD; border-bottom-style: solid; border-bottom-width: 1px; }
+/* all list items */
+.sf-menu li { float: left; width: 120px; /* width needed or else Opera goes nuts */ }
+.sf-menu li.toprow {  margin: 0px;
+	 padding: 5px 30px 5px 0px;
+	_padding: 5px 8px 5px 0; /* IE6 fix */ }
+#vans, #vans a.trl { width: 24px; }
+#trucks, #trucks a.trl { width: 34px;}
+#used, #used a.trl { width: 74px;}
+#exdemonstrators, #exdemonstrators a.trl { width: 95px;}
+#parts, #parts a.trl { width: 25px;}
+#service, #service a.trl { width: 60px;}
+#truck-service, #truck-service a.trl { width: 70px; } 
+#news, #news a.trl { width: 61px;}
+#company, #company a.trl { width: 47px;}
+#contact, #contact a.trl { width: 38px;}
+
+
+.sf-menu a { display: block; width: 100px; padding: 3px 10px 2px 10px; }
+.sf-menu li:hover,
+.sf-menu li.sfhover { background-color: #ECECEC; }
+.sf-menu li.toprow:hover,
+.sf-menu li.toprow.sfhover { background-color: #AAA; color: #FFF; 
+
+ }
+
+.sf-menu li.toprow ul li a:hover,
+.sf-menu li.toprow ul li a:focus,
+.sf-menu li.toprow ul li a.on { color: #00ADEF; }
+
+/* second-level lists */
+.sf-menu li ul { position: absolute; background: #FAFAFA; width: 120px; border-bottom: 1px solid #777;
+    border-left: 1px solid #777; border-right: 1px solid #777; left: -999em; /* using left instead of display to hide menus because display: none isn't read by screen readers */ 
+    -moz-box-shadow: 0px 3px 3px #cecece;
+    -webkit-box-shadow: 0px 3px 3px #cecece;
+    box-shadow: 0 3px 4px #8b8b8b;
+}
+
+/* vehicle lists */
+.sf-menu .dw { background-color: #FAFAFA; height: 268px;
+    border-bottom: 1px solid #777; padding: 11px 15px 19px 15px; }
+.sf-menu .dw-truck { width: 584px; }
+.sf-menu .dw-van { width: 638px; }
+.sf-menu .dw li,
+.sf-menu .dw li a { width: 120px; margin-right: 300px; }
+.sf-menu .dw li:hover,
+.sf-menu .dw li.sfhover { background: transparent; }
+.sf-menu .dw li.header-line,
+.sf-menu .dw li.header-line img { padding-bottom: 5px; margin-left: 5px; }
+.sf-menu .dw li.select-line { padding: 3px 10px 4px 10px; width: 100px; margin-right: 210px; font-weight: bold; color: #999; }
+.sf-menu .dw li a { border-bottom: none; padding: 3px 10px 4px 10px;}
+
+.sf-menu #dw-newactros { background-image: url('/inc/img/menu/newactros.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-actros { background-image: url('/inc/img/menu/actros.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-antos { background-image: url('/inc/img/menu/antos.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-axor { background-image: url('/inc/img/menu/axor.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-arocs { background-image: url('/inc/img/menu/arocs.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-atego { background-image: url('/inc/img/menu/atego.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-econic { background-image: url('/inc/img/menu/econic.jpg'); background-repeat: no-repeat; }
+
+.sf-menu #dw-citan { background-image: url('/inc/img/menu/citan.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-vito { background-image: url('/inc/img/menu/vito.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-sprinter { background-image: url('/inc/img/menu/sprinter.jpg'); background-repeat: no-repeat; }
+.sf-menu #dw-vario { background-image: url('/inc/img/menu/vario.jpg'); background-repeat: no-repeat; }
+
+/* FIX FOR THIRD UL BORDER */
+.sf-menu ul.btop { border-top: 1px solid #777; margin-top: -18px; }
+
+/* menu positioning */
+.sf-menu li ul ul { margin: -17px 0 0 120px; }
+#dw-vito, #dw-actros { margin: -34px 0 0 120px;}
+#dw-sprinter { margin: -51px 0 0 120px;}
+#dw-antos { margin: -34px 0 0 120px; }
+#dw-vario, #dw-axor { margin: -68px 0 0 120px;}
+#dw-arocs { margin: -51px 0 0 120px;}
+#dw-atego { margin: -68px 0 0 120px;}
+#dw-econic { margin: -85px 0 0 120px;}
+
+
+.sf-menu li:hover ul ul,
+.sf-menu li.sfhover ul ul { left: -999em; }
+/* lists nested under hovered list items */
+.sf-menu li:hover ul,
+.sf-menu li.sfhover ul,
+.sf-menu li li:hover ul,
+.sf-menu li li.sfhover ul { left: auto; }
+
+/* LINK COLOUR */
+.sf-menu { font-family: arial, helvetica, serif; font-size: 11px; padding: 0px; margin: 0px; }
+.sf-menu a:link, a:visited { color: #036; text-decoration:none; }
+ul.sf-menu li a:hover,
+ul.sf-menu li a:focus { color: #00ADEF; text-decoration:none; }
+
+/* TOP NAV BAR */
+ul.sf-menu li a.trl { color: #FFF; }
+ul.sf-menu li.sfhover a.trl { color: #FFF; }
+ul.sf-menu li a.trl:hover,
+ul.sf-menu li a.trl:focus { color: #FFF; background-color: #AAA; }
+#menu { padding-left: 70px; }

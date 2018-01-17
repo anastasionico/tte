@@ -1,0 +1,1227 @@
+.halfsize{
+	@include l-grid(2, 5%);
+}
+
+.left_list{
+	div{
+		text-align:left;
+		img{
+			width:100%;
+			height:200px;
+			@include border-radius(5px);
+		}
+		
+		@include media($xs, $sm){
+			@include l-grid(1, 5%);	
+		}
+		@include media($sm){
+			@include l-grid(2, 5%);	
+		}
+	}
+}
+.padding-05{
+	padding:0.5em;
+}
+
+.wideimage{
+	img{
+		width:100%;
+	}
+
+}
+
+.fullwidth{
+	display:block;
+	width:100%;
+}
+
+.home-manufacturer{
+	padding:1em;
+	background-color: $primary;
+	h1{
+		color: $white ;
+	}
+	a{
+		color:$white ;
+	}
+	&--list{
+		height:85px;
+		@include transition(transform .3s ease);
+	  	&:hover{
+			transform:translateY(-15px);
+		}
+		@include media($xs,$sm){
+			text-align: center;
+			@include l-grid(3, 15%);
+			a{
+				max-width: 100px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(5, 5%);
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.cta{
+		border: 1px solid $white;
+		color:$white;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+}
+.home-category{
+	padding:1em;
+	background-color: $primary_lighter;
+	h1{
+		color: $white ;
+	}
+	a{
+		color:$white ;
+	}
+	&--list{
+		height:85px;
+		@include transition(transform .3s ease);
+	  	&:hover{
+			transform:translateY(-15px);
+		}
+		@include media($xs,$sm){
+			text-align: center;
+			@include l-grid(3, 15%);
+			a{
+				max-width: 100px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(5, 5%);
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.cta{
+		border: 1px solid $white;
+		color:$white;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+}
+
+.home-offers{
+	&--list{
+		background-color:$white_lighter;
+		@include media($xs,$sm){
+			text-align: center;
+			@include l-grid(2, 5%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+            	background-repeat:no-repeat;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+        	}
+			&--action{
+				width:100%;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:20%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:$white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						height: 100%;
+						width: 100%;
+						padding: 1em 0 0 1em;
+					}
+				}
+			}
+			a{
+				max-width: 100px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(6, 1%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+            	background-repeat:no-repeat;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+        	}
+			&--action{
+				width:100%;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:20%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:$white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						width: 100%;
+						height: 100%;
+						padding: 1em 0 0 1em;
+					}
+				}
+			}
+			
+
+
+
+
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.btn-ghost{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+		max-width: 95%;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+		max-width: 95%;		
+	}
+	.cta{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+}
+
+.home-newest{
+	padding:1em;
+	background-color: $primary;
+	h1{
+		color: $white ;
+	}
+	a{
+		color:$primary ;
+	}
+	.btn-ghost{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+		max-width: 95%;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+		max-width: 95%;
+	}
+	.cta{
+		border: 1px solid $white;
+		color:$white;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+	&--list{
+		background-color:$white_lighter;
+		@include media($xs,$sm){
+			text-align: center;
+			@include l-grid(2, 5%);	
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				display: block;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:30%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary-lighter;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						
+						content: 'View';
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+					width: 70%;
+					display: inline-block;
+					float:left;
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					border:0px; 
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					&--input{
+						height: 100%;
+						width: 100%;
+						padding: 0 !important;
+					}
+				}
+			}
+			a{
+				max-width: 100px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(4, 1%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				display: block;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:30%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary-lighter;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						
+						content: 'View';
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+					width: 70%;
+					display: inline-block;
+					float:left;
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					border:0px; 
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					&--input{
+						height: 100%;
+						width: 100%;
+						padding: 0 !important;
+					}
+				}
+			}
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	
+}
+
+
+.home-bestSeller{
+	padding:1em;
+	background-color: $primary-lighter;
+	h1{
+		color: $white ;
+	}
+	a{
+		color:$primary ;
+	}
+	.btn-ghost{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+		max-width: 95%;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+		max-width: 95%;
+	}
+	.cta{
+		border: 1px solid $white;
+		color:$white;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+	&--list{
+		background-color:$white_lighter;
+		@include media($xs,$sm){
+			text-align: center;
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				display: block;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:30%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+					width: 70%;
+					display: inline-block;
+					float:left;
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					border:0px; 
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					&--input{
+						height: 100%;
+						width: 100%;
+						padding: 0 !important;
+					}
+				}
+			}
+			@include l-grid(2, 5%);
+			a{
+				max-width: 100px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(4, 1%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				display: block;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:30%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+					width: 70%;
+					display: inline-block;
+					float:left;
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					border:0px; 
+					width:50%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					&--input{
+						height: 100%;
+						width: 100%;
+						padding: 0 !important;
+					}
+				}
+			}
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	
+}
+
+
+.home-featured{
+	&--list{
+		background-color:$white_lighter;
+		@include media($xs,$sm){
+			text-align: center;
+			@include l-grid(2, 5%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				width:100%;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:20%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						height: 100%;
+						width: 100%;
+						padding: 1em 0 0 1em;
+					}
+				}
+			}
+			a{
+				max-width: 100px;
+
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		@include media($sm){
+			@include l-grid(6, 1%);
+			&--image{
+				height:150px;
+            	background-position:center;
+            	background-size:150%;
+ 				@include transition(background-size .3s ease);
+			  	&:hover {
+				    background-size:100%;
+			  	}
+			}
+			&--action{
+				width:100%;
+				height: 3em;
+				&--link{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:20%;
+					margin:0;
+					padding: 1em;
+					background-color: $primary;
+					color:white;
+					height: 100%;
+					position:relative;
+					overflow: hidden;
+					i{
+						@include transition(color .3s ease);
+					}
+					&:after{
+						content: 'View';
+
+						position: absolute;
+						left:20%;
+						bottom:-20px;
+						@include transition(bottom .3s ease);
+					}
+					&:hover {
+						i{
+							color:$primary;
+						}
+					    &:after{
+					    	color:$white;
+					    	bottom:10px;	
+					    }
+					}
+				}
+				& form{
+					margin:0;
+					padding: 0;
+					height: 100%;	
+				}
+				&--quantity{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						border:0;
+						padding: 1em 0 0 1em;
+						&:focus{
+							outline: none;	
+							border-color: inherit;
+  							-webkit-box-shadow: none;
+  							box-shadow: none;
+						}
+					}
+				}
+				&--button{
+					float:left;
+					box-sizing: border-box; 
+					display:inline-block;
+					width:40%;
+					margin:0;
+					padding: 0;
+					height: 100%;
+					input{
+						height: 100%;
+						width: 100%;
+						padding: 1em 0 0 1em;
+					}
+				}
+			}
+			a{
+				max-width: 150px;
+			}		
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.btn-ghost{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+	.btn-ghost-full{
+		@extend %btn-ghost-full;
+	}
+	.cta{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}
+}
+
+
+.home-aboutUs{
+	background-color:$white_darker;
+	.cta{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}	
+}
+.home-delivery{
+	background-color: $white_lighter;
+	.cta{
+		border: 1px solid $primary;
+		color:$primary;
+		@extend %btn-ghost;
+		margin: 0.25em ;
+	}	
+}
+
+
+.mailing_list{
+	padding: 4em;
+	//background-color: $white_lighter;
+	form{
+		padding-top:2em;
+	}
+}
+
+
+.login_container{
+	position:fixed;
+	top:0;
+	left:0;	
+	width:100%;
+	height:100%;
+	background-image:url('../img/prova.jpg');	
+	background-attachment: fixed;
+	background-size:cover;
+	background-position:center;
+	
+}
+.login_blur{
+	width:300px;
+	height:300px;
+ 	left:-webkit-calc( 50% - 150px );
+  	top:-webkit-calc( 50% - 150px );
+  	position:absolute;
+	padding:2em;
+	background-color:transparentize($primary, 0.3);
+	@include border-radius(15px);
+}
+.login_form{
+	width:300px;
+	height:300px;
+ 	left:-webkit-calc( 50% - 150px );
+  	top:-webkit-calc( 50% - 150px );
+  	position:absolute;
+	padding:2em;
+	border:1px solid $white;
+	@include border-radius(15px);
+
+	&--image{
+		width:50%;
+		margin-left: 25%;
+		padding:1em;
+		
+	}
+	label{
+		font-size: 1.2em;
+		color: $white;
+	}
+	input{
+		opacity: 0.5;
+		@include border-radius(5px);
+		&:focus{
+			border-color:$white;
+		}
+	}
+	button{
+		@include border-radius(5px);
+		margin-top: 1em;
+		width: 100%;
+		border:0;
+		padding:1em;
+		font-size: 1.2em;
+		color: $primary;
+		background-color : $white;
+		@include transition(background-color .3s ease, color .3s ease);
+		&:hover{
+			background-color : $tertiary ;
+			color : $white;
+		}
+	}
+	a{
+		color: $white;
+	}
+}
+.part_item{
+	&--action{
+		width:100%;
+		height: 3em;
+		&--link{
+			float:left;
+			box-sizing: border-box; 
+			display:inline-block;
+			width:20%;
+			margin:0;
+			padding: 1em;
+			background-color: $primary;
+			color:white;
+			height: 100%
+		}
+		& form{
+			margin:0;
+			padding: 0;
+			height: 100%;	
+		}
+		&--quantity{
+			float:left;
+			box-sizing: border-box; 
+			display:inline-block;
+			width:40%;
+			margin:0;
+			padding: 0;
+			height: 100%;
+			input{
+				border:0;
+				padding: 1em 0 0 1em;
+				height: 100%;
+				&:focus{
+					outline: none;	
+					border-color: inherit;
+						-webkit-box-shadow: none;
+						box-shadow: none;
+				}
+			}
+		}
+		&--button{
+			float:left;
+			box-sizing: border-box; 
+			display:inline-block;
+			width:40%;
+			margin:0;
+			padding: 0;
+			height: 100%;
+			input{
+				width: 100%;
+				height: 100%;
+				padding: 1em 0 0 1em;
+			}
+		}
+	}
+	@include media($xs, $sm){
+		@include l-grid(2 , 5%);	
+	}
+	@include media($sm){
+		@include l-grid(4 , 5%);	
+	}
+
+	@include border-radius(5px);
+	li{
+		@include l-grid(3 , 1%)
+	}
+	img{
+		width: 100%;
+		height:200px;
+	}
+	}
+
+.part_item-vehicle{
+	height: 350px;
+	@include border-radius(5px);
+	
+	@include media($xs,$sm){
+		@include l-grid(2 , 2%);	
+	}
+	@include media($sm){
+		@include l-grid(5 , 2%);	
+	}
+	
+	li{
+		@include l-grid(3 , 5%)
+	}
+	img{
+		width: 100%;
+		height:200px;
+	}
+}
+
+.partproduct .ptitle{
+	overflow:hidden;
+	max-height:1em;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+}
+
+.checkout_div{
+	padding:3em auto;
+	//min-height:95vh;
+	.btn{
+		@extend %btn-ghost-full;
+		
+	}
+}

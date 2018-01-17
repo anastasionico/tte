@@ -1,0 +1,347 @@
+/*
+ * yourservice booking
+ */
+.breadcrumb { background-color: transparent; }
+div.section { 
+  border-bottom: 1px solid #333333;
+  background-color: #F0F0F0;
+  padding: 20px;
+  color: #333;
+  margin-bottom: 30px;
+}
+div.section h2 { 
+    font-family: 'CorporateACondensedRegular';
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+div.nbb { margin-bottom: 0; }
+div.section p { margin-bottom: 10px; }
+div.section p.bold { margin-bottom: 5px; }
+
+div#diagnostic_reveal {
+    width: 440px;
+    color: #333;
+    padding: 20px;
+    background-color: #F0F0F0;
+}
+div#make_form {
+    background-color: #F0F0F0;
+    padding: 20px;
+    color: #333;
+}
+div#make_form div.title { background-color: #FFF;
+  padding: 4px 10px 4px 5px; border-bottom: 1px solid #DDD; }
+div#make_form div.formsection { border-bottom: 1px solid #DDD; border-left: 1px solid #DDD; border-right: 1px solid #DDD; }
+#make_form label,
+#make_form .label {
+    font-size: 1em;
+    color: #333;
+    font-weight: normal;
+}
+
+
+#booking_bar h1 { color: #FFF; }
+#booking_bar { position: relative; width: 930px; margin: 0 auto; border: 1px solid #777;
+    background: url('/sites/all/themes/sbtheme/img/service/index-bg.jpg') repeat-x; background-color: #2C2D31;
+    padding: 15px; }
+
+
+/* layout - table */
+table.service {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    border: 1px solid #DDD;
+    width: 100%;
+}
+table.service td,
+table.service th {
+  padding: 4px 10px 4px 5px;
+}
+
+table.service th { font-weight: bold; text-align: left; }
+table.service td { vertical-align: middle; }
+table.service td p.bold { margin: 0; }
+table.service td.right { text-align: right; }
+table.service tr { background-color: #FFF; border-bottom: 1px solid #E4E4E4; }
+#booking_bar table.service td,
+#booking_bar table.service th { border-left: 0; }
+table.service td.select { text-align: center; }
+table.service td.select div.sel { float: right; }
+
+/* extras mot and fpr cart 'buttons' */
+div.mot, div.fpr { width: 90px; }
+
+/* booking: datepicker */
+div#selected_date { margin-top: 10px; margin-bottom: 10px; font-weight: bold; }
+
+span.warning { font-size: 18px; color: red; padding-left: 4px; }
+
+/* service level boxes */
+.servicebox {
+    min-height: 300px;
+    background-color: #F0F0F0;
+    padding: 20px;
+    color: #333;
+    position: relative;
+    margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+    .servicebox {
+        min-height: 440px;
+    }
+}
+@media (min-width: 1200px) {
+    .servicebox {
+        min-height: 360px;
+    }
+}
+.servicebox h2 { 
+    font-family: 'CorporateACondensedRegular';
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+}
+.servicebox .button-info,
+.servicebox .button-next {
+    position: absolute;
+    bottom: 20px;
+}
+.servicebox .button-info {
+    left: 20px;
+}
+.servicebox .button-next {
+    right: 20px;
+}
+
+/*
+.lite     { background-color: #00A650; background: url('/sites/all/themes/sbtheme/img/service/ms-lite.jpg') no-repeat top left; } 
+.express  { background-color: #EB7400; background: url('/sites/all/themes/sbtheme/img/service/ms-express.jpg') no-repeat top left;}
+.drive    { background-color: #9E0A0F; background: url('/sites/all/themes/sbtheme/img/service/ms-drive.jpg') no-repeat top left;}
+.collect  { background-color: #4F2D5B; background: url('/sites/all/themes/sbtheme/img/service/ms-collect.jpg') no-repeat top left;}
+*/
+
+/* modal overlay */
+#overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:#000;
+  opacity:0.5; filter:alpha(opacity=50); }
+#modal { position:absolute; background:url(/inc/img/tint20.png) 0 0 repeat; background:rgba(0,0,0,0.2);
+  border-radius:14px; padding:8px; }
+#close { position:absolute; background:url(/inc/img/close.png) 0 0 no-repeat; width:24px;
+  height:27px; display:block; text-indent:-9999px; top:-7px; right:-7px; }
+#modal p { margin-bottom: 10px; }
+
+/* vehicle details */
+span.lbl { font-weight: bold; }
+div.vehicle_details { margin: 10px 10px 0 10px; padding: 10px;
+  background: #00ACEF; color: #FFF; }
+div.vehicle_details div.sec { margin-right: 20px; }
+
+
+table#serviceplans { width: 700px; }
+div#order table td.select { padding: 0px; } /* FIX TABLE PADDING FROM DEFAULT */
+/* hide pricing for checkout */
+div.pprice, div.pname { display: none; }
+
+div#order h1 { margin-bottom: 10px; }
+div#order h2 { margin-bottom: 10px; margin-top: 20px; }
+
+div.sel { 
+    display: block;
+    margin: 1px;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+    background-color: #2e90bb;
+    background-image: -moz-linear-gradient(top, #43b7ea, #0d516e);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#43b7ea), to(#0d516e));
+    background-image: -webkit-linear-gradient(top, #43b7ea, #0d516e);
+    background-image: -o-linear-gradient(top, #43b7ea, #0d516e);
+    background-image: linear-gradient(to bottom, #43b7ea,#0d516e);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF43B7EA', endColorstr='#FF0D516E', GradientType=0);
+    border-color: #0d516e #0d516e #051f2a;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    *background-color: #0d516e;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+div.selon { background-color: #DDD; border-color: #888; cursor: pointer; }
+div.selselected { 
+    background-color: #888;
+    background-image: none;
+    border-color: #888;
+    color: #FFF;
+}
+
+/* order page structure */
+div#order { width: 700px; margin-right: 10px; margin-left: 10px; }
+div#cart { width: 240px;}
+div#order, div#cart { float: left; }
+div.clear { clear: both; }
+
+div#order table td.description	{ width: 355px; }
+
+div.lbl { text-align: center; color: #FFF; }
+
+
+/* DIAGNOSIS */
+
+/* CART */
+#flow 		{ margin-left: 10px; width: 220px; }
+#flow img 	{ margin-bottom: 10px; margin-top: 10px; }
+#flow .bprice	{ margin-bottom: 2px; padding-bottom: 2px; border-bottom: 1px solid #DDD; }
+
+/*   */
+div#order table.vehiclered	{ width: 425px; }
+td, td img					{ vertical-align:top; } 
+input[type="radio"]			{ vertical-align: text-bottom; }
+input[type="checkbox"]		{ vertical-align: bottom; *vertical-align: baseline; }
+.ie6 input					{ vertical-align: text-bottom; }
+/* hand cursor on clickable input elements */
+label, input[type=button],
+input[type=submit], button	{ cursor: pointer; }
+/* HIGHLIGHT */
+::-moz-selection{ background: #888; color:#fff; text-shadow: none; }
+::selection { background:#888; color:#fff; text-shadow: none; } 
+
+
+
+/* 
+ * Non-semantic helper classes 
+ */
+
+/* for image replacement */
+.ir { display:block; text-indent:-999em; overflow:hidden; background-repeat: no-repeat; }
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display:none; visibility:hidden; } 
+
+/* Hide only visually, but have it available for screenreaders 
+   www.webaim.org/techniques/css/invisiblecontent/ 
+   Solution from: j.mp/visuallyhidden - Thanks Jonathan Neal! */
+.visuallyhidden { position:absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+
+#diagnostics {border:1px solid #eee; border-top:none;    width: 680px; margin: 0 auto; padding-bottom:60px;background:#EFF1F3 ; height:100%; min-height:500px; }
+
+#topbar table tr:first-child td:first-child { *height:75px;} /* IE7 strange header fix*/
+
+
+#make_form li {
+    list-style:none;
+    clear:left;
+    padding: 30px 10px;
+    float:left;
+    height:auto;
+    display:inline;
+    border-top:1px solid #DDD;
+    width: 100%;
+}
+#make_form .formsection > fieldset > div > ul {
+    padding: 0;
+}
+#make_form li.nextoptionrow {padding-top:5px; border:none;}
+#make_form li:first-child {border:none;}
+
+#make_form li.even {background:#e8e8e8;}
+#make_form li span {float:left; width:auto;margin-right:19px;}
+#make_form li p {float:left; width:auto; padding-top:2px;}
+
+
+legend { font-weight:bold; font-size:13px; }
+fieldset:first-child { margin-top:0px; }
+
+.label { margin:0;display:block;
+    text-align: left;
+    padding: 1px 1px 20px 1px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; /*makes inputs same lenghth as dropdowns */
+}
+input, label , textarea, select { margin:0;display:block; float:left; padding:1px;  
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; /*makes inputs same lenghth as dropdowns */
+}
+
+input, textarea, select {float:left; width:170px;}
+input.next_step { margin-left: 54px; width: 120px; height: 34px; float: none; display: block; }
+#modal input.next_step,
+#booking_bar input.next_step,
+.section input.next_step { margin-left: 0; }
+.section table.service input,
+.section table.service label { width: auto; }
+.section table.service label { padding-left: 5px; }
+#booking_bar input { width: auto; }
+
+span.spanner { background: url('/sites/all/themes/sbtheme/img/service/spanner.png') no-repeat top left; display: inline-block; width: 15px; height: 15px; }
+
+
+select { width:auto; }
+.short { width:40px; margin-right:6px; }
+textarea { width:auto; height:auto; }
+
+.label, label { vertical-align: baseline; width: 160px; padding-right:10px; }
+label.elecspeed { width:auto; }
+.label, label:first-child { font-weight:bold; }
+#booking_bar label,
+#booking_bar input[type="radio"] {
+  float: none;
+  display: inline;
+  font-size: 13px;
+  vertical-align: middle;
+}
+#booking_bar input[type="text"],
+#booking_bar select { font-size: 15px; }
+
+.radio {
+vertical-align: baseline;
+width: 15px;
+text-align:left;
+margin-right:7px;
+}
+
+.checkbox {
+vertical-align: baseline;
+width: 15px;
+text-align:left;
+margin-right:5px;
+position:relative; top:2px;
+}
+.ie7 .checkbox , .ie76.checkbox {
+top:-1px;
+}
+
+.checkboxlabel			{ width:97px; text-align:left;}
+.checkboximglabel		{ width:60px; }
+
+.icon					{ float:left; width:auto; margin-right:5px; position:relative; top:1px; width:30px;}
+
+.vandiagram				{ position:relative; width:425px; height:200px; }
+.vandiagram img			{ position:absolute; top:0; left:0; z-index:0; }
+.vandiagram td			{ width:105px; height:93px; border: 1px solid #8eadcc; background:red; opacity:0; filter:alpha(opacity=0); }
+.vandiagram td:hover	{ background:red; opacity:0.1; filter:alpha(opacity=10);cursor:pointer; }
+.vandiagram table		{ position:absolute; top:0; left:0; z-index:1; }
+
+
+
+h2#regheader {cursor:auto;}
+
+.introtext {margin:20px;}
+
+
+fieldset#regdetails {display:block; border-top: 1px solid #DDD; }
+#booking_bar .alert-error { margin: 0; margin-bottom: 10px; } 

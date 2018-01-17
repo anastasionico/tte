@@ -1,0 +1,13 @@
+application/config/config.php
+application/config/database.php
+application/config/sagepay_server_config.php
+application/libraries/*
+public/assets/img/*
+logs/*
+ssl/*
+trial/*
+
+
+vendor/*
+
+tte.zip

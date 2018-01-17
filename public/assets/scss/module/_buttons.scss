@@ -1,0 +1,26 @@
+%btn-ghost{
+	display:inline-block;
+	padding: 0.5em 2em; 
+	margin:1em;
+	text-transform:capitalize;
+	&:hover{
+		border-color: $tertiary;
+		color:$tertiary;		
+	}
+}
+%btn-ghost-full{
+	background-color:$tertiary;
+	display:inline-block;
+	margin:0em;
+	border: 1px solid $white;
+	padding: 0.5em 2em; 
+	color:$white;
+	text-transform:capitalize;
+	&:hover{
+		border-color: $white;
+		color:$primary;		
+	}
+}
+#finalorderbutton{
+	margin:3em;
+}
